@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <script type="text/javascript" src="../js/jquery3.js"></script>
+    <script type="text/javascript" src="../js/swiper.js"></script>
+    <script type="text/javascript" src="../js/resize.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <style type="text/css">
+        .gray-bg {
+            background-color: #aaaaaa !important;
+        }
+    </style>
+</head>
+<body class="public page-n4">
+
+<form action="">
+    <div class="col">
+        <i class="iconfont">&#xe6de;</i>
+        <input type="number" placeholder="请输入手机号">
+    </div>
+    <div class="col">
+        <i class="iconfont">&#xe605;</i>
+        <input type="number" placeholder="验证码">
+        <a href="javascript:;" class="authCode">获取验证码</a>
+    </div>
+    <div class="col">
+        <i class="iconfont">&#xe604;</i>
+        <input type="password" placeholder="请输入密码">
+    </div>
+    <div class="col">
+        <i class="iconfont">&#xe604;</i>
+        <input type="password" placeholder="再次输入密码">
+    </div>
+    <div class="col">
+        <i class="iconfont">&#xe600;</i>
+        <input type="password" placeholder="输入推荐人ID">
+    </div>
+    <div class="sure">
+        注册
+    </div>
+    <div class="remark">
+        <input type="checkbox" id="sure">
+        <label for="sure">我已阅读并同意APP用户协议与法律</label>
+    </div>
+</form>
+
+</body>
+<script type="text/javascript">
+    $(".authCode").on("click", function (e) {
+        var time = $(this);
+        if (this.time) {
+            return;
+        }
+        var seconds = 60;
+        time.html(seconds);
+        time.addClass("gray-bg");
+        this.time = true;
+        var timer = setInterval(function () {
+            seconds--;
+            if (seconds < 1) {
+                clearInterval(timer);
+                time.removeClass("gray-bg");
+                time.html("获取验证码");
+                time[0].time = false;
+                return;
+            }
+            time.html(seconds);
+        }, 1000);
+    });
+</script>
+</html>

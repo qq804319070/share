@@ -1,0 +1,82 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #555;
+    font-size: 0.28rem;
+    font-family: "微软雅黑", "Microsoft Yahei";
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+td, th, caption {
+    font-size: 0.28rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: none;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+input, textarea, select, button {
+    font-size: 0.28rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color:    #C8C7CD;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:    #C8C7CD;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color:    #C8C7CD;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color:    #C8C7CD;
+}

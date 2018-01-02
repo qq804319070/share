@@ -1,0 +1,71 @@
+body{
+    width: 100%;
+    height: 13.34rem;
+    background: #EBEBEB;
+    padding-top: 0.2rem;
+}
+.content{
+    width:95%;
+    height: 7.7rem;
+    background: white;
+    /*border: 1px solid ;*/
+    box-shadow: 0 0 10px #999;
+    margin-left: 2.5%;
+    border-radius: 5px;
+    padding-top: 2.5%;
+}
+.content form .save{
+    width: 90%;
+    margin-left: 5%;
+    height:0.78rem;
+    line-height:0.78rem;
+    border-bottom: 1px solid #EBEBEB;
+    color: black;
+}
+.content form .save i{
+    display: inline-block;
+    font-style: normal;
+    width: 25%;
+}
+.content form .save input{
+    border: none;
+    outline: none;
+}
+
+.content form button{
+    width: 90%;
+    margin-left: 5%;
+    height:1rem;
+    line-height: 1rem;
+    background: #CC0001;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 0.4rem;
+}
+/*三级联动选择器*/
+.content-block{
+    width: 70%;
+    height: 0.7rem;
+    line-height:0.7rem;
+    display: inline-block;
+}
+#demo1 {
+    width: 100%;
+    height: 0.7rem;
+    line-height:0.7rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+#demo1::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color:    #000;
+}
+#demo1:-moz-placeholder, textarea:-moz-placeholder {
+    color:    #000;
+}
+#demo1::-moz-placeholder, textarea::-moz-placeholder {
+    color:    #000;
+}
+#demo1:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color:    #000;
+}
